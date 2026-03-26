@@ -16,21 +16,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --ink:        #ebe7dc;
-      --paper:      #0c1516;
-      --card:       #0e171a;
-      --card-lt:    #131f23;
-      --gold:       #ecb02f;
-      --g-centre:   #707d64;
-      --root:       #9d4865;
-      --crown:      #7b74b7;
-      --muted:      #cbc6ba;
-      --line:       rgba(240,237,230,.1);
-      --r:          8px;
-      --serif:      'Exo 2', system-ui, sans-serif;
-      --sans:       'DM Sans', system-ui, sans-serif;
-    }
+ :root {
+  --ink:        #ebe7dc;
+  --paper:      #0c1516;  /* 0 · the field · zero point */
+  --card:       #0e171a;
+  --card-lt:    #131f23;
+  --gold:       #ecb02f;  /* bee gold · dark mode only */
+
+  /* ── spectrum variables (0→9) ── */
+  --node-0:     #0c1516;  /* the field · zero point · infrared */
+  --node-1:     #6b2d1a;  /* coherence · torus · deep red */
+  --node-2:     #9d4418;  /* recognition · vesica piscis · terracotta */
+  --node-3:     #c49a3c;  /* discernment · tetrahedron · pollen */
+  --node-4:     #7a9e2a;  /* wave · cube · new leaf */
+  --node-5:     #2d6a1f;  /* direction · second cube · canopy */
+  --node-6:     #0f6e56;  /* transmission · dodecahedron · deep water */
+  --node-7:     #1a6b9e;  /* expression · egg of life · open sky */
+  --node-8:     #3c3489;  /* structure · octagon · twilight */
+  --node-9:     #2d1a4e;  /* source · nonagon · ultraviolet edge */
+
+  --muted:      #cbc6ba;
+  --line:       rgba(240,237,230,.1);
+  --r:          8px;
+  --serif:      'Exo 2', system-ui, sans-serif;
+  --sans:       'DM Sans', system-ui, sans-serif;
+}
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; font-size: 16px; }
@@ -360,17 +370,15 @@
     .footer a { color: var(--gold); text-decoration: none; }
     .footer a:hover { opacity: .75; }
 
-    /* ─── light theme ─── */
-    [data-theme="light"] {
-      --ink:      #051e20;
-      --paper:    #e7e6e0;
-      --card:     #e1ded7;
-      --card-lt:  #eceae5;
-      --muted:    #5a554e;
-      --gold:     #8B5E2A;  /* beeswax */
-      --line:     rgba(55, 51, 42, 1);
-    }
-
+   [data-theme="light"] {
+  --ink:      #051e20;
+  --paper:    #e7e6e0;
+  --card:     #e1ded7;
+  --card-lt:  #eceae5;
+  --muted:    #5a554e;
+  --gold:     #8B5E2A;  /* beeswax */
+  --line:     rgba(55, 51, 42, 1);
+}
     [data-theme="light"] .nav  { background: #e7e6e0; }
     [data-theme="light"] .brand { color: #051e20; }
     [data-theme="light"] .eco-tile { background: #e1ded7; }
@@ -492,48 +500,48 @@
       <p class="section-label">the ecosystem</p>
       <div class="eco-grid">
 
-        <!-- the quantum ceo — third eye -->
-      <a class="eco-tile" href="https://thequantumceo.com" target="_blank" rel="noopener" style="--tile-accent:#4d4d94">
+        <<!-- 8 · structure · octagon · thequantumceo -->
+       <a class="eco-tile" href="https://thequantumceo.com" target="_blank" rel="noopener" style="--tile-accent: var(--node-8)">
          <p class="centre">structure · octagon</p>
          <h3>the quantum <span>ceo</span></h3>
          <p>Rigorous, research-driven writing on human coherence exploring inner architecture embedded in science.</p>
          <p class="tile-link">visit thequantumceo.com →</p>
         </a>
 
-        <!-- techtuition — throat -->
-        <a class="eco-tile" href="https://techtuition.ai" target="_blank" rel="noopener" style="--tile-accent:#32849d">
+        <!-- 7 · expression · egg of life · techtuition -->
+      <a class="eco-tile" href="https://techtuition.ai" target="_blank" rel="noopener" style="--tile-accent: var(--node-7)">
           <p class="centre">expression · egg of life</p>
           <h3><span>techtuition</span>.ai</h3>
           <p>Guidance and mentorship that give teams a shared language for complexity, coordination, and AI-supported work.</p>
           <p class="tile-link">visit techtuition.ai →</p>
         </a>
 
-         <!-- deiadorebel — sacral -->
-        <div class="eco-tile soon" style="--tile-accent:#d98166">
+         <!-- 6 · transmission · dodecahedron · deiadorebel -->
+      <div class="eco-tile soon" style="--tile-accent: var(--node-6)">
           <p class="centre">transmission · dodecahedron</p>
           <h3><span>deiadorebel</span></h3>
           <p>Self-expression to create connection, momentum, and resonance — music that invites participation and shared energy.</p>
           <p class="tile-link">coming soon</p>
         </div>
 
-         <!-- i am deiadora — spleen -->
-        <div class="eco-tile soon" style="--tile-accent:#af6485">
+         <!-- 4 · observation · first cube · i am deiadora -->
+        <div class="eco-tile soon" style="--tile-accent: var(--node-4)">
           <p class="centre">observation · the first cube</p>
           <h3>i am <span>deiadora</span></h3>
           <p>Structured 'conscious AI' guidelines rooted in relational coherence, emotional intelligence, and information architecture.</p>
           <p class="tile-link">coming soon</p>
         </div>
 
-        <!-- quantummagic — solar plexus -->
-        <div class="eco-tile soon" style="--tile-accent:#c49a3c">
+        <!-- 3 · discernment · tetrahedron · quantummagic -->
+        <div class="eco-tile soon" style="--tile-accent: var(--node-3)">
           <p class="centre">discernment · tetrahedron</p>
           <h3><span>quantum</span>magic</h3>
           <p>Integrating emotional intelligence + relational awareness into smart contracts to move beyond purely transactional finance.</p>
           <p class="tile-link">coming soon</p>
         </div>
 
-         <!-- drbl — heart -->
-       <a class="eco-tile" href="https://drblexchange.com" target="_blank" rel="noopener" style="--tile-accent:#608977">
+         <!-- 2 · recognition · vesica piscis · drblexchange -->
+        <a class="eco-tile" href="https://drblexchange.com" target="_blank" rel="noopener" style="--tile-accent: var(--node-2)">
         <p class="centre">recognition · vesica piscis</p>
         <h3>drbl<span>exchange</span></h3>
         <p>Peer-run space to match needs ↔ offers, run lightweight sprints, and build shared infrastructure across the dtech ecosystem.</p>
