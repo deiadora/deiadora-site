@@ -107,7 +107,7 @@ Deployed on **Cloudflare Pages**.
  
 → [deiadora.com](https://deiadora.com) · node 0 · the field
 → [drblexchange.com](https://drblexchange.com) · node 2 · recognition
-→ [quantummagic.com](https://quantummagic.ai) · node 3 · discernment
+→ [quantummagic.ai](https://quantummagic.ai) · node 3 · discernment
 → [iamdeiadora.com](https://iamdeiadora.com) · node 4 · wave
 → [techtuition.ai](https://techtuition.ai) · node 7 · expression
 → [thequantumceo.com](https://thequantumceo.com) · node 8 · structure
