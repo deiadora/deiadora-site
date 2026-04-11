@@ -8,9 +8,9 @@
 
 ## what this is
 
-This is the home site of the deiadora ecosystem — the zero point from which everything else unfolds. It's a personal site and a hub, but more than that it's a field: the ground condition from which ten nodes of research, writing, music, consulting, and tools are emerging.
+This is the home site of the deiadora ecosystem — the zero point from which everything else unfolds. It's a personal site and a hub, but more than that it's a field: the ground condition from which ten nodes of research, authorship, and architecture are emerging.
 
-The site belongs to Deiadora — natural technologist, researcher, writer, musician. Someone for whom the conversation with the living world is primary, and the tech, the strategy, and the systems thinking emerge from there.
+The site belongs to Deiadora — natural technologist, researcher, author, architect. Someone for whom the conversation with the living world is primary, and the tech, the strategy, and the systems thinking emerge from there.
 
 ---
 
