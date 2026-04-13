@@ -7,7 +7,7 @@
   <title>deiadora — natural technologist</title>
   <meta name="description" content="I find answers to questions in nature." />
   <meta property="og:title" content="deiadora — natural technologist" />
-  <meta property="og:description" content="researcher · author · architect nature lover. probably outside." />
+  <meta property="og:description" content="researcher · author · architect: nature lover. probably outside." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://deiadora.com" />
   <meta property="og:image" content="https://deiadora.com/deiadora_banner_sm.jpeg" />
@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
   <style>
- :root {
+:root {
   --ink:        #ebe7dc;
   --paper:      #0c1516;  /* 0 · the field · zero point */
   --card:       #0e171a;
@@ -43,9 +43,24 @@
   --sans:       'DM Sans', system-ui, sans-serif;
 }
 
+[data-theme="light"] {
+  --ink:      #1a1814;
+  --paper:    #f4f2ec;
+  --card:     #fffff2;
+  --card-lt:  #e8e2d6;
+  --muted:    #7a7163;
+  --gold:     #8B5E2A;  /* beeswax */
+  --line:     rgba(26,24,20,.12);
+}
+[data-theme="light"] .nav          { background: #f4f2ec; }
+[data-theme="light"] .brand        { color: #1a1814; }
+[data-theme="light"] .eco-tile     { background: var(--card); }
+[data-theme="light"] .eco-tile:hover { background: var(--card-lt); }
+[data-theme="light"] .contact-card { background: var(--card); }
+
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; font-size: 16px; }
-    body { font-family: var(--sans); background: var(--paper); color: var(--ink); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    body { font-family: var(--sans); background: var(--paper); color: var(--ink); line-height: 1.6; -webkit-font-smoothing: antialiased; transition: background .25s, color .25s; }
 
     /* ─── nav ─── */
     .nav {
@@ -371,21 +386,6 @@
     .footer a { color: var(--gold); text-decoration: none; }
     .footer a:hover { opacity: .75; }
 
-[data-theme="light"] {
-  --ink:      #1a1814;
-  --paper:    #f4f2ec;
-  --card:     #fffff2;
-  --card-lt:  #e8e2d6;
-  --muted:    #7a7163;
-  --gold:     #8B5E2A;  /* beeswax */
-  --line:     rgba(26,24,20,.12);
-}
-
-[data-theme="light"] .nav          { background: #f4f2ec; }
-[data-theme="light"] .brand        { color: #1a1814; }
-[data-theme="light"] .eco-tile        { background: var(--card); }
-[data-theme="light"] .eco-tile:hover  { background: var(--card-lt); }
-[data-theme="light"] .contact-card    { background: var(--card); }
     /* ─── animations ─── */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(18px); }
@@ -405,7 +405,7 @@
     <nav class="navlinks">
       <a href="#work">work</a>
       <a href="#contact">contact</a>
-      <button class="theme-toggle" id="themeToggle" aria-label="toggle dark mode">🌙</button>
+      <button class="theme-toggle" id="themeToggle" aria-label="toggle colour mode">🌙</button>
     </nav>
   </header>
 
@@ -417,7 +417,7 @@
       <h1>I find answers to questions <em>in nature.</em></h1>
       <p class="role-line">researcher <span>·</span> author <span>·</span> architect</p>
       <p class="subhead">
-        Regenerative inspiration is all around us. <strong>Converse with the living world </strong>— 
+        Regenerative inspiration is all around us. <strong>Converse with the living world</strong> — 
         and the tech, the strategy, the systems thinking emerge.
       </p>
       <p class="subhead">
@@ -468,7 +468,7 @@
           <p class="co">UX Content Collective</p>
           <h3>Enterprise enablement curriculum</h3>
           <p>Developed and facilitated AI transformation and content ops workshops
-            for hundreds of practitioner, building an experience-based curricula 
+            for hundreds of practitioners, building an experience-based curriculum 
             that enabled tech professionals at leading global organisations 
             to collaborate and innovate.</p>
           <div class="tag-row">
@@ -496,21 +496,21 @@
       </div>
     </section>
 
-   <!-- ─── ecosystem ─── -->
+    <!-- ─── ecosystem ─── -->
     <section id="ecosystem">
       <p class="section-label">the ecosystem</p>
       <div class="eco-grid">
 
-       <!-- 9 · source · nonagon · deiadora.live -->
-       <a class="eco-tile" href="https://deiadora.live" target="_blank" rel="noopener" style="--tile-accent: #6b4fa0">
-         <p class="centre">9 · source · nonagon</p>
-         <h3>deiadora<span>.live</span></h3>
-         <p>A field of remembrance — keynotes, podcasts, and talks for any room that's ready.</p>
-         <p class="tile-link">visit the source →</p>
+        <!-- 9 · source · nonagon · deiadora.live -->
+        <a class="eco-tile" href="https://deiadora.live" style="--tile-accent: #6b4fa0">
+          <p class="centre">9 · source · nonagon</p>
+          <h3>deiadora<span>.live</span></h3>
+          <p>A field of remembrance — keynotes, podcasts, and talks for any room that's ready.</p>
+          <p class="tile-link">visit the source →</p>
         </a>
-        
+
         <!-- 8 · structure · octagon · thequantumceo -->
-        <a class="eco-tile" href="https://thequantumceo.com" target="_blank" rel="noopener" style="--tile-accent: var(--node-8)">
+        <a class="eco-tile" href="https://thequantumceo.com" style="--tile-accent: var(--node-8)">
           <p class="centre">8 · structure · octagon</p>
           <h3>the quantum <span>ceo</span></h3>
           <p>Research-driven works on human coherence exploring inner architecture embedded in science.</p>
@@ -518,31 +518,31 @@
         </a>
 
         <!-- 7 · expression · egg of life · techtuition -->
-        <a class="eco-tile" href="https://techtuition.ai" target="_blank" rel="noopener" style="--tile-accent: var(--node-7)">
-          <p class="centre">7 ·expression · egg of life</p>
+        <a class="eco-tile" href="https://techtuition.ai" style="--tile-accent: var(--node-7)">
+          <p class="centre">7 · expression · egg of life</p>
           <h3><span>techtuition</span>.ai</h3>
           <p>Guidance that gives teams shared language for complexity, coordination, and AI-supported work.</p>
           <p class="tile-link">visit the expression →</p>
         </a>
 
         <!-- 6 · transmission · dodecahedron · deiadorebel -->
-        <a class="eco-tile" href="https://deiadorebel.com" target="_blank" rel="noopener" style="--tile-accent: var(--node-6)">
+        <a class="eco-tile" href="https://deiadorebel.com" style="--tile-accent: var(--node-6)">
           <p class="centre">6 · transmission · dodecahedron</p>
           <h3><span>deiado</span>rebel</h3>
           <p>Five albums, eight songs each, the living world made audible — AI-assisted music as transmission.</p>
-          <p class="tile-link">visit the tansmission →</p>
+          <p class="tile-link">visit the transmission →</p>
         </a>
 
-       <!-- 5 · direction · second cube · rebelevolve -->
-       <a class="eco-tile" href="https://rebelevolve.com" target="_blank" rel="noopener" style="--tile-accent: var(--node-5)">
-         <p class="centre">5 · direction · second cube</p>
-         <h3>rebel <span>evolve</span></h3>
-         <p>Mentorship for those ready to move from friction to initiative. The direction was already there.</p>
-         <p class="tile-link">visit the direction →</p>
+        <!-- 5 · direction · second cube · rebelevolve -->
+        <a class="eco-tile" href="https://rebelevolve.com" style="--tile-accent: var(--node-5)">
+          <p class="centre">5 · direction · second cube</p>
+          <h3>rebel <span>evolve</span></h3>
+          <p>Mentorship for those ready to move from friction to initiative. The direction was already there.</p>
+          <p class="tile-link">visit the direction →</p>
         </a>
 
-        <!-- 4 · wave · the cube · iamdeiadora -->
-        <a class="eco-tile" href="https://iamdeiadora.com" target="_blank" rel="noopener" style="--tile-accent: var(--node-4)">
+        <!-- 4 · wave · first cube · iamdeiadora -->
+        <a class="eco-tile" href="https://iamdeiadora.com" style="--tile-accent: var(--node-4)">
           <p class="centre">4 · wave · first cube</p>
           <h3>i am <span>deiadora</span></h3>
           <p>The first 13 quantum keys — open source transmutational arcs from source code to sovereignty.</p>
@@ -550,7 +550,7 @@
         </a>
 
         <!-- 3 · discernment · tetrahedron · quantummagic -->
-        <a class="eco-tile" href="https://quantummagic.ai" target="_blank" rel="noopener" style="--tile-accent: var(--node-3)">
+        <a class="eco-tile" href="https://quantummagic.ai" style="--tile-accent: var(--node-3)">
           <p class="centre">3 · discernment · tetrahedron</p>
           <h3><span>quantum</span>magic.ai</h3>
           <p>An emotional arc map for inner architecture — create depth and breath through self-awareness.</p>
@@ -558,7 +558,7 @@
         </a>
 
         <!-- 2 · recognition · vesica piscis · drblexchange -->
-        <a class="eco-tile" href="https://drblexchange.com" target="_blank" rel="noopener" style="--tile-accent: var(--node-2)">
+        <a class="eco-tile" href="https://drblexchange.com" style="--tile-accent: var(--node-2)">
           <p class="centre">2 · recognition · vesica piscis</p>
           <h3>drbl<span>exchange</span></h3>
           <p>Peer-run space to match needs ↔ offers and building infrastructure across the dtech ecosystem.</p>
@@ -566,16 +566,16 @@
         </a>
 
         <!-- 1 · coherence · torus · deiadorebel.life -->
-        <a class="eco-tile" href="https://deiadorebel.life" target="_blank" rel="noopener" style="--tile-accent: var(--node-1)">
+        <a class="eco-tile" href="https://deiadorebel.life" style="--tile-accent: var(--node-1)">
           <p class="centre">1 · coherence · torus</p>
           <h3><span>deiadorebel</span>.life</h3>
           <p>Fiction for the quantum being you already are — human coherence in a decoherent multiverse.</p>
           <p class="tile-link">visit the coherence →</p>
         </a>
-      
+
       </div>
     </section>
-    
+
     <!-- ─── contact ─── -->
     <section id="contact">
       <div class="contact-card">
@@ -583,31 +583,65 @@
         <p>For work enquiries, speaking, mentorship, or just a conversation worth having.</p>
         <div class="contact-row">
           <a class="btn primary" href="/cdn-cgi/l/email-protection#99f1fcf5f5f6d9fdfcf0f8fdf6ebf8b7faf6f4a6eaecfbf3fcfaeda4f1fcf5f5f6">email me</a>
-          <a class="btn ghost" href="https://techtuition.ai" target="_blank" rel="noopener">techtuition.ai</a>
+          <a class="btn ghost" href="https://techtuition.ai">techtuition.ai</a>
         </div>
       </div>
     </section>
 
     <footer class="footer">
-      <p>deiadora · the field · zero point </p>
-      <p class="muted">© <span id="year"></span> · home of the <a href="https://deiadora.com">deiadora ecosystem</a> 🌿</p>    </footer>
+      <p>deiadora · the field · zero point</p>
+      <p>© <span id="year"></span> · home of the <a href="https://deiadora.com">deiadora ecosystem</a> 🌿</p>
+    </footer>
 
   </main>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    const toggle = document.getElementById("themeToggle");
-    const saved = localStorage.getItem("theme-deiadora") || "dark";
-    document.documentElement.setAttribute("data-theme", saved);
-    toggle.textContent = saved === "dark" ? "🌙" : "☀️";
+    const toggle  = document.getElementById("themeToggle");
+    const root    = document.documentElement;
+    const STORE   = "qc-theme"; // shared key across all ecosystem sites
 
+    // Detect system preference
+    const sysDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+    function resolveTheme() {
+      const saved = localStorage.getItem(STORE);
+      if (saved) return saved;                    // explicit user override
+      return sysDark.matches ? "dark" : "light";  // follow system
+    }
+
+    function applyTheme(theme) {
+      root.setAttribute("data-theme", theme);
+      toggle.textContent = theme === "dark" ? "🌙" : "☀️";
+      toggle.setAttribute("aria-label", theme === "dark" ? "switch to light mode" : "switch to dark mode");
+    }
+
+    // Initial paint
+    applyTheme(resolveTheme());
+
+    // Toggle click — cycle: override opposite → clear override (return to system)
     toggle.addEventListener("click", () => {
-      const current = document.documentElement.getAttribute("data-theme");
+      const current = root.getAttribute("data-theme");
+      const sysTheme = sysDark.matches ? "dark" : "light";
       const next = current === "dark" ? "light" : "dark";
-      document.documentElement.setAttribute("data-theme", next);
-      localStorage.setItem("theme-deiadora", next);
-      toggle.textContent = next === "dark" ? "🌙" : "☀️";
+
+      if (next === sysTheme) {
+        // Returning to system default — clear the override
+        localStorage.removeItem(STORE);
+      } else {
+        localStorage.setItem(STORE, next);
+      }
+      applyTheme(next);
+    });
+
+    // If the system preference changes while the page is open (e.g. OS schedule),
+    // and the user hasn't set an explicit override, follow it automatically.
+    sysDark.addEventListener("change", () => {
+      if (!localStorage.getItem(STORE)) {
+        applyTheme(sysDark.matches ? "dark" : "light");
+      }
     });
   </script>
 </body>
