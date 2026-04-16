@@ -394,6 +394,8 @@ section { margin-top:4.5rem; }
 </div>
 
 <script>
+document.getElementById('year').textContent = new Date().getFullYear();
+  
 const toggle  = document.getElementById('themeToggle');
 const root    = document.documentElement;
 const STORE   = 'qc-theme';
